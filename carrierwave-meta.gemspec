@@ -20,15 +20,15 @@ Gem::Specification.new do |s|
   s.license = 'MIT'
 
   s.add_dependency(%q<carrierwave>, [">= 0.5.7"])
-  s.add_dependency(%q<activesupport>, [">= 3.0"])
+  s.add_dependency(%q<activesupport>, [">= 5.0"])
   s.add_dependency(%q<mime-types>)
-  s.add_development_dependency(%q<rspec-rails>, ">= 2.6")
+  s.add_development_dependency(%q<rspec-rails>, ">= 3.8.1")
   s.add_development_dependency(%q<sqlite3-ruby>)
   s.add_development_dependency(%q<rmagick>)
   s.add_development_dependency(%q<mini_magick>)
   s.add_development_dependency(%q<carrierwave-imagesorcery>)
   s.add_development_dependency(%q<carrierwave-vips>)
-  s.add_development_dependency(%q<fog>, '~> 1.3.1')
+  s.add_development_dependency(%q<fog>, '~> 1.42.1')
   s.add_development_dependency(%q<simplecov>)
-  s.add_development_dependency(%q<activerecord>, '>= 3.0')
+  s.add_development_dependency(%q<activerecord>, '>= 5.0')
 end

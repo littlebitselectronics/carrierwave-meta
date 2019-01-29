@@ -287,6 +287,11 @@ GhostScript and rebuild ImageMagick with GhostScript support:
   brew install imagemagick --with-ghostscript
   gem uninstall rmagick && gem install rmagick
 
+To solve the issue in Mac OSX Sierra, High Sierra, El Capitan, and Mojave, you can do the following:
+
+  brew unlink imagemagick
+  brew install imagemagick@6 && brew link imagemagick@6 --force
+
 To switch on PDF/EPS processing you should enable GhostScript somewhere in your
 app's initializer:
 
